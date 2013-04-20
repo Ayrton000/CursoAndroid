@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+ <TITLE>Aplicacion</TITLE>
+ 
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      
+      <link rel="stylesheet" type="text/css" href="css/themes/default/jquery.mobile-1.3.0.css" />
+      
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <script type="text/javascript" src="js/jquery.mobile-1.3.0.js"></script>
+ 
+</HEAD>
+<BODY><!--Los data-role son como los type en input's-->
+      <div data-role="page">
+           <div data-role="header" data-position="fixed" data-theme="a">
+                <h2>Mi primer proyecto</h2>
+           </div>
+           <div data-role="content">
+           <div data-role="controlgroup">
+                <a href="#buttons" data-role="button">Button</a>
+                <a href="#forms" data-role="button">Form</a>
+                <a href="#listviews" data-role="button">ListViews</a>
+                <a href="#dialogs" data-role="button">Dialogs</a>
+                <a href="#panels" data-role="button">Pnales</a>
+           </div>
+           </div>
+           <div data-role="footer" data-position="fixed" data-theme="b">
+                <h2>Footer</h2>
+           </div>
+      </div>
+      
+      <div data-role="page" id="buttons" data-position="fixed"> <!--Buttons-->
+           <div data-role="header" data-theme="b">
+                <h2>Buttons</h2>
+                <a href="#" class="ui-btn-right" data-role="button" data-rel="back" data-icon="back" data-iconpos="notext"></a>
+           </div>
+           <div data-role="content">
+                <a href="#" data-role="button" data-mini="true">Boton1</a>
+                <button data-inline="true" data-theme="b" data-mini="true">Boton2</button>
+                <input data-inline="true" type="submit" value="Boton3" />
+                <input data-inline="true" type="button" value="Boton4" />
+                <a href="#" data-role="button" data-mini="true" data-icon="plus" data-iconpos="right">Boton5</a>
+                <a href="#" data-role="button" data-mini="true" data-icon="plus" data-iconpos="notext">BotonSinTexto</a>
+           </div>
+           <div data-role="footer">
+                <h2>Buttons</h2>
+           </div>
+      </div>  <!--Fin de buttons-->
+      
+      <div data-role="page" id="forms" data-position="fixed"> <!--forms-->
+           <div data-role="header" data-theme="b" >
+                <h2>Forms</h2>
+                <a href="#" data-role="button" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+           </div>
+           <div data-role="content">
+                <input data-type="range" value="0" min="0" max="100" step="10" data-highlight="true"/>
+                <div data-role="rangeslider">
+                     <input data-type="range" value="0" min="0" max="100" step="10" data-highlight="true"/>
+                     <input data-type="range" value="80" min="0" max="100" step="10" data-highlight="true"/>
+                </div>
+                
+                <select data-role="slider" data-mini="true"> <!--Solo 2 opciones: OFF Y ON-->
+                <option value="off">OFF</option>
+                <option value="on">ON</option>
+                </select>
+                
+           </div>
+           <div data-role="footer" data-theme="b" data-position="fixed">
+                <h2>Empty</h2>
+           </div>
+      </div>  <!--Fin de forms-->
+      
+      <div data-role="page" id="listviews"> <!--listviews-->
+           <div data-role="header">
+                <h2>Buttons</h2>
+           </div>
+           <div data-role="content">
+                Buttons
+           </div>
+           <div data-role="footer">
+                <h2>Buttons</h2>
+           </div>
+      </div>  <!--Fin de listviews-->
+      
+      <div data-role="page" id="dialogs"> <!--dialogs-->
+           <div data-role="header">
+                <h2>Buttons</h2>
+           </div>
+           <div data-role="content">
+                Buttons
+           </div>
+           <div data-role="footer">
+                <h2>Buttons</h2>
+           </div>
+      </div>  <!--Fin de dialogs-->
+      
+      <div data-role="page" id="panels"> <!--panels-->
+           <div data-role="header">
+                <h2>Buttons</h2>
+           </div>
+           <div data-role="content">
+                Buttons
+           </div>
+           <div data-role="footer">
+                <h2>Buttons</h2>
+           </div>
+      </div>  <!--Fin de panels-->
+      
+      
+
+
+</BODY>
+</HTML>
