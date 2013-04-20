@@ -132,12 +132,13 @@
                   var filmes = data_json.filmes;
 
                   for (var i=0; i < filmes.length; i++){
+                    var img_src = "http://www.cinepolis.com.mx/Imagenes/Peliculas/" + filmes[i].nombre.split("-")[0].replace("Dig","").replace("IMAX","").replace("4DX","").replace("Dob","").replace("3D","").replace("Sub","").replace("Esp","").replace(/^\s+|\s+$/g, '').replace(/[^\w\s]/gi, '').replace(/ /g,"-") + "-cartel.jpg";
                     li_filme = $("<li/>");
                     a_filme = $("<a/>",{
                       "href": filmes[i].link
                     });
                     img_filme = $("<img/>",{
-                      "src": ""
+                      "src": img_src
 
                     })
                     h2_filme = $("<h2/>",{
